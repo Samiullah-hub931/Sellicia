@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sellicia - Your Ultimate Online Shopping Destination</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Sellicia</h1>
+        <p>Your ultimate destination for online shopping. We offer a wide range of high-quality products with excellent customer service and seamless dropshipping solutions.</p>
+    </header>
+
+    <main>
+        <section id="basic-features">
+            <h2>Basic Features</h2>
+            <ul>
+                <!-- Loop through the basic features dynamically -->
+                ${Array.from({length: 125}, (_, i) => `<li>Basic Feature ${i + 1}</li>`).join('')}
+            </ul>
+        </section>
+
+        <section id="advanced-features">
+            <h2>Advanced Features</h2>
+            <ul>
+                <!-- Loop through the advanced features dynamically -->
+                ${Array.from({length: 50}, (_, i) => `<li>Advanced Feature ${i + 1}</li>`).join('')}
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Sellicia. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Log the feature lists to the console for verification
+        console.log('Basic Features:', [...Array(125).keys()].map(i => `Basic Feature ${i + 1}`));
+        console.log('Advanced Features:', [...Array(50).keys()].map(i => `Advanced Feature ${i + 1}`));
+    </script>
+</body>
+</html>
